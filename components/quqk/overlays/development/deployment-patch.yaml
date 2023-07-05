@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: quqk
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-kjsl-tenant/byoc-app-gkrk/quqk@sha256:9bc93575494a6308695da33175ac7a09b2755c8bf55d934bdf551add6df0a091
+        name: my-java-quarkus
+        resources: {}
+status: {}
